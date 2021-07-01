@@ -1,7 +1,8 @@
 import React from "react";
-import ReactDom from "react-dom";
 import "./App.css";
 import SearchWeather from "./SearchWeather";
+import "bootstrap/dist/css/bootstrap.css";
+import axios from "axios";
 
 export default function App() {
   return (
