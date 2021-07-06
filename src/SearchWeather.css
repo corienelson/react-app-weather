@@ -1,16 +1,27 @@
 ul {
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 li {
   list-style: none;
+  text-align: left;
   text-transform: capitalize;
 }
 h1 {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 30px;
   color: blue;
 }
 form {
   margin-top: 20px;
   margin-bottom: 30px;
+}
+h2 {
+  text-align: center;
+  color: rgba(0, 0, 255, 0.719);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+}
+.row {
+  color: blue;
 }

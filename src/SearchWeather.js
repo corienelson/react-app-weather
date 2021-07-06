@@ -42,17 +42,22 @@ export default function SearchWeather() {
     return (
       <div>
         {form}
-        <ul>
-          <li>Current weather for {City}</li>
-          <li>Description: {weather.description}</li>
-          <li>Temperature: {Math.round(weather.temperature)} °C.</li>
-          <li>Humidity: {weather.humidity}%</li>
-          <li>Wind Speed: {Math.round(weather.wind)}km/h</li>
-          <li>
+        <h2>Weather for {City}</h2>
+        <div className="row">
+          <div className="col-6">
             {" "}
             <img src={weather.icon} alt={weather.description} />
-          </li>
-        </ul>
+            <span className="Temperature" />
+            {Math.round(weather.temperature)} °C
+          </div>
+          <div className="col-6">
+            <ul>
+              <li>{weather.description}</li>
+              <li>Humidity: {weather.humidity}% </li>
+              <li>Wind Speed: {Math.round(weather.wind)} km/h</li>
+            </ul>
+          </div>
+        </div>
       </div>
     );
   } else {
