@@ -34,21 +34,24 @@ export default function SearchWeather() {
         type="search"
         placeholder="Enter a city..."
         onChange={updateCity}
+        autoFocus="on"
       />
       <input type="submit" value="Search" />
     </form>
   );
   if (loaded) {
     return (
-      <div>
+      <div className="Weather">
         {form}
-        <h2>Weather for {City}</h2>
+        <h2>{City}</h2>
         <div className="row">
           <div className="col-6">
             {" "}
             <img src={weather.icon} alt={weather.description} />
-            <span className="Temperature" />
-            {Math.round(weather.temperature)} °C
+            <span className="temperature">
+              {Math.round(weather.temperature)}{" "}
+            </span>
+            <span className="unit">°C</span>
           </div>
           <div className="col-6">
             <ul>

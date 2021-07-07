@@ -17,11 +17,24 @@ form {
 }
 h2 {
   text-align: center;
-  color: rgba(0, 0, 255, 0.719);
+  color: blue;
   text-transform: capitalize;
   margin-bottom: 20px;
   padding-bottom: 30px;
 }
-.row {
+.temperature {
+  font-size: 60px;
+  font-weight: 600;
+}
+.unit {
   color: blue;
+  font-size: 16px;
+  position: relative;
+  top: -32px;
+  font-weight: 500;
+  margin-left: 3px;
+}
+img {
+  height: 110px;
+  float: left;
 }
